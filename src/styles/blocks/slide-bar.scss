@@ -1,0 +1,148 @@
+.slide-bar {
+  &_2 {
+    margin-top: 18px;
+  }
+
+  &__head {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__line {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 6px;
+    background: #99d45b;
+    border-radius: 5px;
+    max-width: 700px;
+    //transition: 0.5s all;
+  }
+
+  &__dragger {
+    height: 6px;
+    border-radius: 5px;
+    width: 710px;
+    max-width: calc(100% - 104px);
+    margin-top: 18px;
+    margin-bottom: 35px;
+  }
+
+  &__dragger-button {
+    background: url("../images/tap__slide.png") no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -10px;
+    cursor: pointer;
+    left: calc(100% - 12px);
+  }
+
+  &__dragger-wrap {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__sq {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  &__banner {
+    display: block;
+    width: 70px;
+    height: 40px;
+    border: 1px solid #c9cccf;
+    position: relative;
+    border-radius: 5px;
+    background: white;
+    padding-left: 10px;
+  }
+  &__label {
+    content: url("../images/frame-border.png");
+    display: block;
+    width: 6px;
+    height: 14px;
+    position: absolute;
+    top: 14px;
+    left: -5px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: #a0a0a0;
+    font-size: 14px;
+    padding: 0 35px 0 0;
+    user-select: none;
+    -webkit-user-drag: none;
+
+    li {
+
+    }
+  }
+
+  &__worker {
+    width: 100%;
+
+    .ui-slider-range.ui-widget-header {
+      background: #99d45b;
+      height: 6px;
+      position: absolute;
+      top: 0px;
+    }
+
+    &.ui-corner-all {
+      position: relative;
+      top: 0;
+      height: 6px;
+      background: #e6e9eb;
+      border: none;
+    }
+
+    .ui-corner-all {
+      background: url("../images/tap__slide.png") no-repeat center center;
+      width: 24px;
+      height: 24px;
+      top: -9px;
+      border: none;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .slide-bar {
+    &_2 {
+      margin-top: 40px;
+    }
+    &__dragger-wrap {
+      padding-top: 4px;
+    }
+
+    &__dragger {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__sq {
+      position: absolute;
+      top: -41px;
+      right: 3px;
+    }
+  }
+}

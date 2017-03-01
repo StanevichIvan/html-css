@@ -1,0 +1,125 @@
+.manufactures {
+  &__head {
+    text-transform: uppercase;
+    margin-top: 74px;
+    font-size: 29px;
+    padding-left: 13px;
+    margin-bottom: 34px;
+  }
+  &__logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: white;
+    max-width: 1140px;
+    padding: 25px 0;
+  }
+  &__item {
+    height: 100px;
+    width: 190px;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-right: 1px solid #e7edf2;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+    &_amstrong {
+      background: url("../images/manufactures/amstrong.png") no-repeat center center;
+    }
+    &_albes {
+      background: url("../images/manufactures/albes.png") no-repeat center center;
+    }
+    &_knauf {
+      background: url("../images/manufactures/knauf.png") no-repeat center center;
+    }
+    &_rocfon {
+      background: url("../images/manufactures/rockfon.png") no-repeat center center;
+    }
+    &_elam {
+      background: url("../images/manufactures/elam.png") no-repeat center center;
+    }
+    &_wallof {
+      background: url("../images/manufactures/walloff.png") no-repeat center center;
+    }
+    &_lautex {
+      background: url("../images/manufactures/lautex.png") no-repeat center center;
+    }
+    &_parmet {
+      background: url("../images/manufactures/parmet.png") no-repeat center center;
+    }
+    &_planson {
+      background: url("../images/manufactures/planson.png") no-repeat center center;
+    }
+    &_integra {
+      background: url("../images/manufactures/integra.png") no-repeat center center;
+    }
+    &_thu{
+      background: url("../images/manufactures/THU.png") no-repeat center center;
+    }
+    &_ceilings{
+      background: url("../images/manufactures/ceilings.png") no-repeat center center;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .manufactures {
+    padding: 0 20px;
+    &__item {
+      background-size: contain;
+      height: 111px;
+    }
+    &__head {
+      margin-top: 22px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    &__logos {
+      padding: 10px 0;
+    }
+    &__item {
+      width: 33%;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 1px;
+        background: #e7edf2;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 89%;
+        background: #e7edf2;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      &:nth-child(3n) {
+        &:before {
+          display: none;
+        }
+      }
+      &:nth-child(n+4) {
+        &:after {
+          display: none;
+        }
+      }
+
+      a {
+        border-right: none;
+        background-size: 62%;
+      }
+    }
+  }
+}

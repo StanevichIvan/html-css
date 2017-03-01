@@ -1,0 +1,43 @@
+.products-list {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  &_room-type {
+    margin-top: 0;
+    margin-bottom: 40px;
+    li {
+      &:first-child {
+        margin-top: 3px;
+      }
+
+      a {
+
+      }
+    }
+  }
+  li {
+    margin-top: 17px;
+    a {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  &_products {
+    li {
+      a {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .products-list {
+    margin-top: 0;
+    column-count: 1;
+    margin-bottom: 10px;
+
+  }
+}

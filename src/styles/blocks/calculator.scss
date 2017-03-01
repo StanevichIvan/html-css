@@ -1,0 +1,51 @@
+.calculator {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: white;
+  padding: 30px;
+  padding-bottom: 17px;
+
+  &__slide-bars {
+
+  }
+  &__total {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 475px;
+    margin-top: 20px;
+    &-head {
+      font-size: 20px;
+      display: flex;
+      flex-flow: row wrap;
+      font-weight: 800;
+    }
+  }
+  &__currency {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  &__price {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .calculator {
+    padding: 25px 0 10px 0;
+    margin-top: 6px;
+    &__slide-bar {
+      padding: 0 35px;
+    }
+    &__total {
+      max-width: 100%;
+      padding: 0 35px;
+      margin-top: 10px;
+    }
+    &__total-head {
+      font-size: 23px;
+    }
+  }
+
+}

@@ -1,0 +1,138 @@
+.footer {
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  &__contacts {
+    padding-left: 15px;
+    h3 {
+      margin-bottom: 13px;
+      margin-top: 15px;
+    }
+  }
+
+  &__adress {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  &__phone {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &__email {
+    margin: 6px 0 11px;
+    font-weight: 500;
+  }
+
+  &-contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 508px;
+
+    &__col {
+      width: 50%;
+      font-weight: 600;
+      &:nth-child(2) {
+        padding-left: 35px;
+        color: #a0a0a0;
+      }
+    }
+  }
+
+  &__search {
+    width: 100%;
+
+    input {
+      float: left;
+      right: 46px;
+      height: 47px;
+      padding-left: 20px;
+      width: 80%;
+      background: #faf9f9;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      float: left;
+      width: 46px;
+      height: 47px;
+      background: url("../images/search-icon.png") center center no-repeat #2a7cd0;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+  &-column {
+    &:nth-child(2) {
+      width: 220px;
+    }
+    &:nth-child(3) {
+      width: 283px;
+    }
+    &__head {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      li {
+        margin-bottom: 17px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-wrap {
+    padding: 0 35px;
+  }
+  .footer__search {
+    width: 100%;
+    padding-top: 30px;
+    input {
+      width: calc(100% - 46px);
+    }
+  }
+  .footer-contacts__col:nth-child(2){
+    padding-left: 15px;
+    p{
+      margin: 0 0 8px 0;
+    }
+  }
+  .footer__contacts {
+    padding: 0 35px;
+    &__col{
+    }
+    h3 {
+      margin-bottom: 8px;
+      margin-top: 9px;
+    }
+  }
+  .footer__adress{
+    margin-top: 0;
+  }
+
+  .footer-column {
+    &__head {
+      font-size: 16px;
+      margin-top: 26px;
+      margin-bottom: 15px;
+    }
+    &:nth-child(3) {
+      width: 50%;
+      padding-left: 15px;
+    }
+    &:nth-child(2) {
+      width: 50%;
+    }
+  }
+}

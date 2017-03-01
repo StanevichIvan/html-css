@@ -1,0 +1,27 @@
+.success-popup {
+  width: 644px;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 13px;
+  background: url("../images/popup-succsess-arrow.png") no-repeat center top;
+
+  &__head {
+    font-size: 34px;
+    margin: 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+  }
+
+  &__sub-head {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #686868;
+    text-align: center;
+    font-size: 19px;
+    margin: 14px 14px 30px;
+  }
+
+  &__link {
+    font-family: "Roboto", sans-serif;
+  }
+}

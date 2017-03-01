@@ -1,0 +1,162 @@
+.page-card {
+  width: 380px;
+  &_big {
+    min-height: 600px;
+    background: url("../images/big-card.png") center center no-repeat;
+    background-size: cover;
+    max-width: 380px;
+    padding: 23px 15px 5px 35px;
+    float: left;
+  }
+  &_regular {
+    min-height: 300px;
+    float: left;
+    width: 50%;
+    max-width: 380px;
+    padding: 23px 15px 0 35px;
+
+    &1 {
+      background: url("../images/card-small1.png") center no-repeat;
+      background-size: cover;
+    }
+    &2 {
+      background: url("../images/card-small2.png") center no-repeat;
+      background-size: cover;
+    }
+    &3 {
+      background: url("../images/card-small3.png") center no-repeat;
+      background-size: cover;
+    }
+    &4 {
+      background: url("../images/card-small4.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+  &__head {
+    margin: 0;
+    min-height: 38px;
+    text-transform: uppercase;
+    position: relative;
+    &_index {
+      font-size: 28px;
+      white-space: nowrap;
+    }
+    &:before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: #1c75ce;
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    li {
+      margin-top: 22px;
+      padding-left: 10px;
+      background: url("../images/list-arrow.png") no-repeat left;
+      a {
+        color: black;
+      }
+    }
+    &_index {
+      white-space: normal;
+      li {
+        a {
+          font-size: 15px;
+          font-weight: 500;
+          font-family: 'Roboto Condensed', sans-serif;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+    &_small {
+      margin-top: 20px;
+      min-height: 108px;
+      li {
+        margin-top: 12px;
+        a {
+
+        }
+      }
+    }
+    &_manufacture {
+      li {
+        margin-top: 17px;
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  &__right-block {
+    float: left;
+    max-width: 790px;
+    width: 65%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-card {
+    width: 100%;
+    max-width: 100%;
+    &_big {
+      max-width: 100%;
+      width: 100%;
+      padding: 23px 35px 5px 35px;
+      min-height: 382px;
+    }
+    &__head {
+      text-align: center;
+      &:before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__list {
+      column-count: 2;
+      margin-bottom: 0;
+
+      li {
+        margin-top: 0;
+        margin-bottom: 17px;
+        display: block;
+        background: url("../images/list-arrow.png") left top 5px no-repeat;
+      }
+      &_small {
+        margin-top: 16px;
+        min-height: 22px;
+        &-floor {
+          margin-bottom: 19px;
+        }
+      }
+    }
+    &__right-block {
+      max-width: 100%;
+      width: 100%;
+    }
+    &_regular {
+      width: 100%;
+      max-width: 100%;
+      padding: 23px 35px 0 35px;
+      min-height: 225px;
+      &3 {
+        min-height: 240px;
+      }
+      &2 {
+        min-height: 174px;
+      }
+      &4 {
+        min-height: 174px;
+      }
+    }
+  }
+  .card-mobile-button {
+    margin: auto;
+  }
+}

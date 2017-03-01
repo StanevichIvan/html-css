@@ -1,0 +1,69 @@
+.tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  &__item {
+    text-transform: uppercase;
+    display: block;
+    padding: 0 30px;
+    background: #e1e4e5;
+    position: relative;
+    color: #a0a0a0;
+    transition: all 0.3s;
+    height: 60px;
+    margin-right: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 60px;
+    &.active {
+      background: white;
+      color: black;
+
+      .tabs__border {
+        height: 4px;
+      }
+    }
+  }
+  &__border {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #0067ce;
+    transition: all 0.3s;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tabs {
+    flex-flow: row;
+    height: 80px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &_mobile-wrap {
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+    }
+    &__item {
+      text-transform: none;
+      line-height: 15px;
+      padding: 17px 15px 0;
+      max-width: 135px;
+      font-size: 15px;
+
+      &.active {
+        .tabs__border {
+          transform: none;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+}

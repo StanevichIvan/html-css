@@ -1,0 +1,42 @@
+.products-providers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 17px;
+
+  &__item {
+    width: 16.6%;
+    height: 92px;
+  }
+
+  &__item-link {
+    display: block;
+    height: 72px;
+    transition: all 0.3s;
+    border: 4px solid white;
+    width: 88%;
+    margin: auto;
+
+    &:hover {
+      border: 4px solid #0067ce;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .products-providers {
+    &__item {
+      height: 55px;
+      width: 27%;
+    }
+    &__item-link {
+      height: 40px;
+      width: 100%;
+      border: none;
+      background-size: contain;
+      &:hover {
+        border: none;
+      }
+    }
+  }
+}

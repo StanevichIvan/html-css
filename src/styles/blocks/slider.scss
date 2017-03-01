@@ -1,0 +1,286 @@
+.slider-top {
+  position: relative;
+  &__item {
+    overflow: hidden;
+    width: 100%;
+    height: 596px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__card {
+    width: 640px;
+    min-height: 185px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    position: relative;
+    padding: 14px 15px 15px 30px;
+    left: -8px;
+
+    &-head {
+      font-size: 29px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+    }
+    &-text {
+      color: #ffffff;
+      margin: 5px 0 22px;
+      font-size: 16px;
+    }
+  }
+}
+
+.slider-control {
+  position: absolute;
+  top: 228px;
+  width: 100%;
+  z-index: 10;
+  &__left {
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 72px;
+    background: url("../images/switcher__left.png") no-repeat center center;
+    left: 50px;
+    opacity: 0.75;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__right {
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 72px;
+    background: url("../images/switcher__right.png") no-repeat center center;
+    right: 50px;
+    opacity: 0.6;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.typed-slider {
+  &__item {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 373px;
+    position: relative;
+  }
+
+  &__href {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+
+  &__card {
+    position: absolute;
+    width: 275px;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 15px 0 30px;
+    z-index: 10;
+
+    &-head {
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+    &-text {
+      color: white;
+      line-height: 26px;
+      margin-top: 5px;
+      i {
+        text-decoration: underline;
+        font-style: normal;
+        color: white;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    display: block;
+    min-width: 100px;
+    height: 30px;
+    left: calc(100% - 254px);
+    bottom: 30px;
+    .owl-dot {
+      display: inline-block;
+      width: 32px;
+      height: 25px;
+      background: url("../images/dot-disable.png") no-repeat center center;
+      &.active {
+        background: url("../images/dot-active.png") no-repeat center center;
+      }
+    }
+  }
+}
+
+.slider-contacts-mobile {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .slider-control {
+    display: none;
+  }
+  .contacts-slider-controls {
+    position: absolute;
+    width: 100%;
+    top: 43%;
+    transform: translate(0, -50%);
+    z-index: 10;
+
+    &__item {
+      display: block;
+      width: 29px;
+      height: 50px;
+      position: absolute;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+      &_left {
+        left: 35px;
+        background: url("../images/switch-contacts-slider.png") center center;
+        transform: rotate(180deg);
+
+      }
+      &_right {
+        right: 35px;
+        background: url("../images/switch-contacts-slider.png") center center;
+      }
+    }
+  }
+  .slider-top {
+    &__card {
+      width: calc(100% - 40px);
+      left: 0;
+      margin: 0 20px 50px;
+      padding: 17px 57px;
+      //opacity: 0.8;
+      &-text {
+        margin: 12px 0 16px;
+        font-size: 14px;
+        text-align: center;
+      }
+      &-head {
+        font-size: 20px;
+      }
+    }
+    &__item {
+      height: 444px;
+    }
+  }
+  .slider__button {
+    margin: auto;
+  }
+  .typed-slider {
+    &__img {
+      height: 410px;
+    }
+    .owl-dots {
+      display: none !important;
+    }
+    &__card {
+      padding: 26px 30px 0 35px;
+    }
+    &__card-head {
+      font-size: 16px;
+    }
+    &__card-text {
+      line-height: 25px;
+      margin-top: 8px;
+
+    }
+  }
+  .slider-contacs-mobile {
+    position: relative;
+  }
+
+  .slider-contacts-mobile {
+    position: relative;
+    display: block;
+  }
+
+  .owl-stock-mobile-slider {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.run-fullscreen-slider {
+  cursor: pointer;
+}
+
+.product-description-slider {
+  &__controls {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: calc(50% - 25px);
+    &_left {
+      cursor: pointer;
+      display: block;
+      width: 29px;
+      height: 50px;
+      position: absolute;
+      transform: rotate(180deg);
+      left: 35px;
+      background: url("../images/switch-contacts-slider.png") center center;
+    }
+    &_right {
+      cursor: pointer;
+      display: block;
+      width: 29px;
+      height: 50px;
+      position: absolute;
+      right: 35px;
+      background: url("../images/switch-contacts-slider.png") center center;
+    }
+  }
+  &__zoom {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    cursor: pointer;
+    right: 20px;
+    width: 43px;
+    height: 43px;
+    background: url("../images/slider_images/full-screen.png") center center no-repeat;
+  }
+  &__lightbox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    &_hidden {
+      display: none;
+    }
+  }
+}

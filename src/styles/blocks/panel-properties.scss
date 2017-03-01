@@ -1,0 +1,146 @@
+.panel-properties {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 7px;
+  &__col {
+    &_1 {
+      width: 350px;
+      img {
+        max-width: 100%;
+      }
+    }
+    &_2 {
+      width: 730px;
+    }
+  }
+
+  &__list-head {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 13px;
+    font-family: "Roboto";
+    &_functional {
+      margin-top: 27px;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 9px;
+    padding-left: 21px;
+    background: url("../images/circle-blue.png") left top 3px no-repeat;
+    &_functional {
+      &:first-child {
+        margin-top: 10px;
+      }
+      margin-top: 28px;
+
+    }
+  }
+
+  &__list-item-head {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__list-item-text {
+    margin-top: 12px;
+    max-width: 93%;
+  }
+
+  &__components {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 23px;
+  }
+  &-components {
+    &__item {
+      &_1 {
+        width: 200px;
+      }
+      &_5 {
+        width: 220px;
+      }
+    }
+    &__item-head {
+      font-size: 13px;
+      margin: 0;
+    }
+    &__list {
+
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .panel-properties {
+    &__col {
+      &_1 {
+        margin: auto;
+      }
+    }
+
+  }
+  .panel-properties-components {
+    &__item {
+      &_1 {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+      &_5 {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .manufacture__panel-type-list {
+    width: auto;
+  }
+  .manufacture__panel-type {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .manufacture__functional-col {
+    &_1 {
+      width: 50%;
+      .page-card__list {
+        column-count: 1;
+      }
+    }
+    &_2 {
+      width: 50%;
+      .page-card__list {
+        column-count: 1;
+      }
+    }
+    &_3 {
+      width: 50%;
+      .page-card__list {
+        column-count: 1;
+      }
+    }
+    &_4 {
+      width: 50%;
+      .page-card__list {
+        column-count: 1;
+      }
+    }
+    &_5 {
+      width: 50%;
+      .page-card__list {
+        column-count: 1;
+      }
+    }
+  }
+}

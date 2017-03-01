@@ -1,0 +1,26 @@
+.mCS-catalog-scroll {
+
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 10px;
+    background: #a0a0a0;
+    position: absolute;
+    right: 0;
+
+    &:after {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 4px;
+      height: 10px;
+      background: url("../images/catalog-scroll.png") center center no-repeat;
+    }
+  }
+
+  .mCSB_scrollTools .mCSB_draggerRail {
+    background: white;
+  }
+
+}

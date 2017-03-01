@@ -1,0 +1,134 @@
+.suggestions {
+  background: white;
+  padding-bottom: 30px;
+  &__head {
+    margin: 66px 0 33px;
+    padding-left: 13px;
+    font-size: 34px;
+  }
+  &__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &__card {
+    position: relative;
+    width: 25%;
+    height: 305px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 22px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &-wrap {
+      max-width: 235px;
+      margin: auto;
+      p {
+        margin-top: 5px;
+        line-height: 19px;
+      }
+    }
+  }
+  &__card-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 178px;
+    transition: 0.3s;
+    h3 {
+      margin-bottom: 0;
+      font-size: 20px;
+      margin-top: 17px;
+    }
+    &_lorry {
+      background: url("../images/zoom-cards/lorry.png") no-repeat left 30px top 60px #f4faff;
+    }
+    &_repair {
+      background: url("../images/zoom-cards/repair.png") left 47px top 70px no-repeat #f4faff;
+    }
+    &_design {
+      background: url("../images/zoom-cards/design.png") left 24px top 42px no-repeat #f4faff;
+    }
+    &_build {
+      background: url("../images/zoom-cards/build.png") left 23px top 37px no-repeat #f4faff;
+    }
+    &:hover {
+      left: -20px;
+      top: -20px;
+      width: 110%;
+      height: 110%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .suggestions {
+    padding-bottom: 0;
+    &__card-content {
+      &:hover {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+    }
+    &__head {
+      margin: 22px 0 15px;
+      padding-left: 0;
+      font-size: 30px;
+      text-align: center;
+    }
+    &__card {
+      width: 100%;
+      height: 150px;
+      &-wrap {
+        margin-left: 185px;
+      }
+      &-content {
+        height: 140px;
+        padding-top: 18px;
+        &_lorry {
+          background: url("../images/zoom-cards/lorry.png") left 15px top 30px no-repeat #f4faff;
+        }
+        &_repair {
+          background: url("../images/zoom-cards/repair.png") left 15px top 22px no-repeat #f4faff
+        }
+        &_design {
+          background: url('../images/zoom-cards/design.png') left 18px top 9px no-repeat #f4faff;
+        }
+        &_build {
+          background: url('../images/zoom-cards/build.png') left 23px top 4px no-repeat #f4faff;
+        }
+
+      }
+    }
+    &__cards {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: $yandex-validation) {
+  .suggestions {
+    &__cards {
+    }
+    &__card-content{
+      background-size: 20% !important;
+      background-position-y: 43% !important;
+    }
+    &__card-wrap {
+      margin-left: 110px;
+      max-width: 210px;
+    }
+  }
+}

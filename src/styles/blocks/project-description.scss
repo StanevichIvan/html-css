@@ -1,0 +1,43 @@
+.project-description {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #dfe3e7;
+  padding-top: 10px;
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &_first {
+    padding-top: 0;
+  }
+  &__head {
+    margin-top: 13px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+  &__link-category {
+    font-size: 15px;
+    color: #0067ce;
+  }
+  &__text {
+    margin-top: 2px;
+    color: #686868;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .project-description {
+    &__head {
+      padding: 0 19px;
+    }
+    &__link-category {
+      padding: 0 100px 0 19px;
+      display: block;
+      line-height: 20px;
+    }
+    &__text {
+      padding: 0 19px;
+      margin-bottom: 10px;
+    }
+  }
+}

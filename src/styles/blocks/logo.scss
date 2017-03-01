@@ -1,0 +1,15 @@
+.logo{
+  width: 194px;
+  height: 52px;
+  background: url("../images/logo-header.png") center center;
+  background-size: cover;
+
+  &_header{
+
+  }
+  &_footer{
+    position: relative;
+    top: 135px;
+    margin: auto;
+  }
+}

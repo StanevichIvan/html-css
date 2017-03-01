@@ -1,0 +1,86 @@
+.project-decryption-light-gallery {
+  display: none;
+}
+
+#lg-counter {
+  display: none;
+}
+
+//
+//.lg-toolbar {
+//  display: none;
+//}
+
+.lg-toolbar {
+  .lg-download {
+    display: none;
+  }
+
+  .lg-close.lg-icon {
+    font-size: 0;
+    background: url("../images/slider_images/close-full-screen.png") center center no-repeat;
+  }
+}
+
+.lg-toogle-thumb {
+  display: none;
+}
+
+.lg-thumb-outer {
+  height: 150px !important;
+}
+
+.lg-outer .lg-thumb-item.active {
+  border: none;
+  img {
+    filter: grayscale(0);
+  }
+}
+
+.lg-actions .lg-next {
+  background: url("../images/slider_images/switcher-popup.png") center center no-repeat;
+  width: 82px;
+  height: 82px;
+  transform: rotate(180deg);
+  transition: none;
+  &:hover {
+    background: url("../images/slider_images/switcher-popup-active.png") center center no-repeat;
+    transform: rotate(0deg);
+  }
+}
+
+.lg-actions .lg-prev {
+  background: url("../images/slider_images/switcher-popup.png") center center no-repeat;
+  width: 82px;
+  height: 82px;
+  transition: none;
+
+  &:hover {
+    background: url("../images/slider_images/switcher-popup-active.png") center center no-repeat;
+    transform: rotate(180deg);
+  }
+}
+
+.lg-actions .lg-prev:after {
+  content: none;
+}
+
+.lg-actions .lg-next:before {
+  content: none;
+}
+
+.lg-hide-items .lg-next {
+  background: none;
+}
+
+.lg-outer .lg-thumb-item {
+  border: none;
+  border-radius: 0;
+  img {
+    transition: all 0.3s;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}

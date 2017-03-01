@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header content-width">
+    <div class="header__mobile-contacts">
+        <span class="header__mobile-contacts_phone"><a href="tel:(812) 611 03 66">(812) 611 03 66</a></span>
+        <a href="#" class="header__mobile-contacts_email">info@yannisto.ru</a>
+    </div>
+    <div class="header__line mobile-padding">
+        <a href="#" class="logo logo_header"></a>
+        <p class="header__about mobile-hide">
+            Подвесные потолки, стеновые панели, напольные покрытия.
+            <strong>Официальный</strong> дилер Армстронг, Албес, Кнауф, Рокфон на Северо-Западе.
+        </p>
+        <div class="header__location mobile-hide">
+            <p class="header__location-city">Санкт-Петербург</p>
+            <p class="header__location-phone"><a href="tel:(812) 611 03 66"> (812) 611 03 66 </a></p>
+        </div>
+        <div class="header__contact mobile-hide">
+            <p class="header__location-city">Написать нам</p>
+            <a class="header__location-mail" href="#">info@yannisto.ru</a>
+        </div>
+        <div class="header__search mobile-hide">
+            <form>
+                <input class="search__input" placeholder="Поиск по каталогу">
+                <button class="search__icon"></button>
+            </form>
+        </div>
+        <div class="mobile-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <menu class="menu content-width mobile-hide">
+        <menuitem class="menu__item menu__item_about"><a href="#"> О нас </a></menuitem>
+        <menuitem class="menu__item menu__item_projects"><a href="#">Выполненные проекты</a></menuitem>
+        <menuitem class="menu__item menu__item_products"><a href="#">Продукция </a></menuitem>
+        <menuitem class="menu__item menu__item_arcitects"><a href="#">Архитекторам</a></menuitem>
+        <menuitem class="menu__item menu__item_montaj"><a href="#">Монтаж и отделка</a></menuitem>
+        <menuitem class="menu__item menu__item_contact"><a href="#">Контакты</a></menuitem>
+        <menuitem class="menu__item_search">
+            <form>
+                <input class="search__input" placeholder="Поиск по каталогу">
+                <button class="search__icon"></button>
+            </form>
+        </menuitem>
+    </menu>
+</header>
+
+
+<section class="breadcrumbs">
+    <div class="content-width" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <span itemprop="itemListElement" itemscope
+              itemtype="http://schema.org/ListItem" class="breadcrumbs__itemListElement">
+             <a href="#" class="breadcrumbs__item" itemprop="item">Главная</a>
+          <meta itemprop="position" content="1"/>
+        </span>
+        <span itemprop="itemListElement" itemscope
+              itemtype="http://schema.org/ListItem" class="breadcrumbs__itemListElement">
+             <a href="#" class="breadcrumbs__item" itemprop="item"><span>Производитель</span> <meta
+                     itemprop="position"
+                     content="2"/></a></span>
+    </div>
+    <div class="breadcrumbs__mobile-back"><a href="#">Вернуться в каталог</a></div>
+</section>
+
+<section class="project-section project-section_calculator">
+    <div class="content-width">
+        <h1 class="project-section__head">онлайн калькулятор</h1>
+        <div class="calculator typed-columns-wrap">
+            <div class="typed-column typed-column_1 typed-column_calculator">
+                <div class="calculator__slide-bar slide-bar">
+                    <h3 class="slide-bar__head">площадь помещения</h3>
+                    <div class="slide-bar__dragger-wrap js-dragger-wrap">
+                        <div class="slide-bar__dragger">
+
+                            <div class=" slider-jq slide-bar__worker input_1" data-input="input_1"></div>
+
+                            <!--<div class="slide-bar__line">-->
+                                <!--<span class="slide-bar__dragger-button js-dragger"></span>-->
+                            <!--</div>-->
+                            <ul class="slide-bar__list">
+                                <li>200</li>
+                                <li>400</li>
+                                <li>600</li>
+                                <li>800</li>
+                                <li>1000</li>
+                                <li>1200</li>
+                                <li>1400</li>
+                                <li>1600</li>
+                                <li>1800</li>
+                                <li>2000</li>
+                            </ul>
+                        </div>
+
+                        <div class="slide-bar__sq">
+                            <input id="input_1" class="slide-bar__banner"/>
+                            <label class="slide-bar__label"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__slide-bar slide-bar slide-bar_2">
+                    <h3 class="slide-bar__head">периметр помещения</h3>
+                    <div class="slide-bar__dragger-wrap js-dragger-wrap">
+                        <div class="slide-bar__dragger">
+
+                            <div class=" slider-jq slide-bar__worker input_2" data-input="input_2"></div>
+
+                            <ul class="slide-bar__list">
+                                <li>200</li>
+                                <li>400</li>
+                                <li>600</li>
+                                <li>800</li>
+                                <li>1000</li>
+                                <li>1200</li>
+                                <li>1400</li>
+                                <li>1600</li>
+                                <li>1800</li>
+                                <li>2000</li>
+                            </ul>
+                        </div>
+                        <div class="slide-bar__sq">
+
+                            <input id="input_2" class="slide-bar__banner"/>
+                            <label class="slide-bar__label"></label>
+                        </div>
+                    </div>
+                </div>
+                <table class="typed-table typed-table_calculator">
+                    <tr class="typed-table__head typed-table__head_calculator">
+                        <th>Комплектующие</th>
+                        <th>Кол-во</th>
+                        <th>Наименование</th>
+                        <th>Цена, руб</th>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                    <tr class="typed-table__line">
+                        <td><a href="#">Плита потолочная 600х600 мм</a></td>
+                        <td>50</td>
+                        <td><a href="#">NEWTONE</a></td>
+                        <td>935</td>
+                    </tr>
+                </table>
+                <div class="calculator__total">
+                    <h3 class="calculator__total-head">Итого <span class="calculator__price">455 000</span>
+                        <span class="calculator__currency">рублей</span>
+                    </h3>
+                    <button class="button1 button1_orange button1_calculator popup-show" data-popup="order">Заказать
+                    </button>
+                </div>
+            </div>
+            <div class="typed-column typed-column_2 typed-column_2-calculator">
+                <div class="typed-column__block typed-column__block_calculator">
+                    <h3 class="block__head block__head_calculator">Продукция:</h3>
+                    <a class="block__link" href="#">Ссылка на страницу 1</a>
+                    <a class="block__link" href="#">Ссылка на страницу 1</a>
+                    <a class="block__link" href="#">Ссылка на страницу 1</a>
+                    <a class="block__link" href="#">Ссылка на страницу 1</a>
+                </div>
+                <div class="typed-column__block typed-column__block_calculator">
+                    <h3 class="block__head block__head_calculator">Дополнительно:</h3>
+                    <a class="block__link" href="#">Ссылка на страницу 1</a>
+                    <a class="block__link" href="#">Ссылка на страницу 1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="typed-section_slider typed-section_calculator typed-section_grey">
+    <div class="typed-slider__head content-width clearfix">
+        <h2 class="typed-slider__title">Фотогалерея проектов с использованием Sierra OP Armstrong</h2>
+        <div class="typed-slider__controls">
+            <span class="typed-slider__controls_left"></span>
+            <span class="typed-slider__controls_right"></span>
+        </div>
+    </div>
+    <div class="typed-slider content-width">
+        <div class="typed-slider__item">
+            <div class="typed-slider__img"
+                 style="background: url('./images/typed-slider-img.png') no-repeat center center;">
+                <div class="typed-slider__card">
+                    <h3 class="typed-slider__card-head">Частный пансионат
+                        Спутник</h3>
+                    <p class="typed-slider__card-text">
+                        Подвесной потолок
+                        <i>Armstrong Ultima</i> +, кромка SL-2
+                        300х1800х19 мм., коридорное
+                        решение, на подвесной системе
+                        Armstrong Prelude, окрашенный
+                        по заданию заказчика в цвет
+                        RAL - 600 м2
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="typed-slider__item">
+            <div class="typed-slider__img"
+                 style="background: url('./images/typed-slider-img.png') no-repeat center center;">
+                <div class="typed-slider__card">
+                    <h3 class="typed-slider__card-head">Частный пансионат
+                        Спутник</h3>
+                    <p class="typed-slider__card-text">
+                        Подвесной потолок
+                        <i>Armstrong Ultima</i> +, кромка SL-2
+                        300х1800х19 мм., коридорное
+                        решение, на подвесной системе
+                        Armstrong Prelude, окрашенный
+                        по заданию заказчика в цвет
+                        RAL - 600 м2
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="typed-slider__item">
+            <div class="typed-slider__img"
+                 style="background: url('./images/typed-slider-img.png') no-repeat center center;">
+                <div class="typed-slider__card">
+                    <h3 class="typed-slider__card-head">Частный пансионат
+                        Спутник</h3>
+                    <p class="typed-slider__card-text">
+                        Подвесной потолок
+                        <i>Armstrong Ultima</i> +, кромка SL-2
+                        300х1800х19 мм., коридорное
+                        решение, на подвесной системе
+                        Armstrong Prelude, окрашенный
+                        по заданию заказчика в цвет
+                        RAL - 600 м2
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="typed-slider__item">
+            <div class="typed-slider__img"
+                 style="background: url('./images/typed-slider-img.png') no-repeat center center;">
+                <div class="typed-slider__card">
+                    <h3 class="typed-slider__card-head">Частный пансионат
+                        Спутник</h3>
+                    <p class="typed-slider__card-text">
+                        Подвесной потолок
+                        <i>Armstrong Ultima</i> +, кромка SL-2
+                        300х1800х19 мм., коридорное
+                        решение, на подвесной системе
+                        Armstrong Prelude, окрашенный
+                        по заданию заказчика в цвет
+                        RAL - 600 м2
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="content-width">
+        <div class="footer-wrap">
+            <div class="footer__contacts">
+                <h3 class="">КОНТАКТЫ</h3>
+                <div class="footer-contacts">
+                    <div class="footer-contacts__col">
+                        <p>
+                            197022, Россия, г. Санкт-Петербург,
+                            Инструментальная ул. дом 3,
+                            БЦ "Кантемировский"
+                        </p>
+                        <p>
+                            Тел.: (812) 611 03 66
+                        </p>
+                        <p>Написать нам: <a href="#">info@yannisto.ru </a></p>
+                    </div>
+                    <div class="footer-contacts__col">
+                        <p>ООО "Яннисто Северо-Запад" </p>
+                        <p>ИНН 7801587778</p>
+                        <p>КПП 781301001</p>
+                    </div>
+                </div>
+                <form class="footer__search clearfix">
+                    <input placeholder="Поиск по каталогу">
+                    <button></button>
+                </form>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-column__head">Навигация</h3>
+                <ul class="footer-column__list">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Выполненные проекты</a></li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Архитекторам</a></li>
+                    <li><a href="#">Монтаж и отделка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-column__head">Продукция</h3>
+                <ul class="footer-column__list">
+                    <li><a href="#">Потолки</a></li>
+                    <li><a href="#">Стеновые панели</a></li>
+                    <li><a href="#">Напольные покрытия</a></li>
+                    <li><a href="#">Нестандартые решения</a></li>
+                    <li><a href="#">Прегородки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="popup-bg"></div>
+
+<div class="popup success">
+    <div class="popup__success success-popup">
+        <span class="popup__close-cross"></span>
+        <h2 class="success-popup__head">Ваша заявка успешно отправлена</h2>
+        <p class="success-popup__sub-head">С вами свяжутся в ближайшее время</p>
+        <a href="#" class="success-popup__link">Посмотрите наши выполненные проекты</a>
+    </div>
+</div>
+
+<div class="popup kp">
+    <div class="popup__kp kp-popup">
+        <span class="popup__close-cross"></span>
+        <form>
+            <h2 class="kp-popup__head">Запросить КП</h2>
+            <label class="popup__input"><input type="text" placeholder="Имя"></label>
+            <label class="popup__input"><input type="text" placeholder="Телефон*"></label>
+            <label class="popup__input"><input type="text" placeholder="Email"></label>
+            <textarea type="text" class="popup__textarea" placeholder="Комментарий"></textarea>
+            <button class="popup__form-submit button1 button1_orange">Запросить КП</button>
+        </form>
+    </div>
+</div>
+
+<div class="popup order">
+    <div class="popup__kp kp-popup">
+        <span class="popup__close-cross"></span>
+        <form>
+            <h2 class="kp-popup__head">Заказать</h2>
+            <label class="popup__input"><input type="text" placeholder="Имя"></label>
+            <label class="popup__input"><input type="text" placeholder="Телефон*"></label>
+            <label class="popup__input"><input type="text" placeholder="Email"></label>
+            <textarea type="text" class="popup__textarea" placeholder="Комментарий"></textarea>
+            <button class="popup__form-submit button1 button1_orange">Заказать</button>
+        </form>
+    </div>
+</div>
+
+<div class="popup calculate">
+    <div class="popup__kp kp-popup">
+        <span class="popup__close-cross"></span>
+        <form>
+            <h2 class="kp-popup__head">Запросить расчет цены
+                материалов для проекта</h2>
+            <label class="popup__input active"><input type="text" placeholder="Имя"></label>
+            <label class="popup__input"><input type="text" placeholder="Телефон*"></label>
+            <label class="popup__input"><input type="text" placeholder="Email"></label>
+            <textarea type="text" class="popup__textarea" placeholder="Комментарий"></textarea>
+            <button class="popup__form-submit button1 button1_orange">Заказать</button>
+        </form>
+    </div>
+</div>
+
+<script src="./js/plugins/jquery.min.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="./js/plugins/lightgallery.js"></script>
+<script src="./js/plugins/lg-thumbnail.js"></script>
+<script src="./js/plugins/lightbox.min.js"></script>
+<script src="./js/plugins/owl.carousel.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/main.min.js"></script>
+</body>
+</html>

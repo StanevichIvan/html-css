@@ -1,0 +1,113 @@
+.popup-bg {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.8;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  padding: 30px;
+  background: white;
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+  }
+
+  &__close-cross {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/cross-popup.png") center center no-repeat;
+    cursor: pointer;
+
+    &:hover {
+      background: url("../images/cross-popup-hover.png") center center no-repeat;
+    }
+  }
+  &__img {
+
+  }
+
+  &__success {
+
+  }
+  &__input {
+    display: block;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      border: 1px solid #c9cccf;
+      font-size: 15px;
+      position: relative;
+      border-radius: 5px;
+      transition: 0.3s all;
+
+    }
+    &.active {
+      margin-bottom: 20px;
+      input {
+        border: 1px solid #ff301a;
+
+        &::-webkit-input-placeholder {
+          color: #ff301a;
+        }
+        &::-moz-placeholder {
+          color: #ff301a;
+        }
+        &:-ms-input-placeholder {
+          color: #ff301a;
+        }
+        &:-moz-placeholder {
+          color: #ff301a;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        content: "заполните поле";
+        color: #ff301a;
+        bottom: -18px;
+        font-size: 12px;
+        right: 0;
+      }
+    }
+  }
+
+  &__form-submit {
+    margin: 28px auto auto;
+    min-width: 167px;
+  }
+
+  &__textarea {
+    display: block;
+    border: 1px solid #c9cccf;
+    width: 100%;
+    height: 101px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+    padding: 12px 20px 20px 20px;
+    font-size: 15px;
+  }
+}

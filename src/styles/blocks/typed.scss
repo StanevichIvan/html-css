@@ -1,0 +1,359 @@
+.typed {
+  &-section {
+    &_grey {
+      background: #f3f5f6;
+    }
+
+    &_slider {
+      padding-bottom: 0px;
+      padding-top: 24px;
+    }
+    &_calculator {
+      padding-bottom: 50px;
+    }
+    &_slider-manufacture {
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+  }
+  &__head {
+    padding: 22px 28px 10px;
+    margin: 0;
+    font-size: 34px;
+    text-transform: uppercase;
+    &_better {
+      padding: 0;
+      font-size: 18px;
+      margin-top: 28px;
+    }
+    &_photo {
+      margin: 27px 0 15px;
+      font-size: 24px;
+      padding: 0;
+    }
+  }
+  &-columns-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    &_better {
+      margin-top: 0;
+    }
+    &-item {
+      padding-left: 22px;
+      background: url("../images/list-circle.png") left top 5px no-repeat;
+      p {
+        line-height: 18px;
+        margin: 12px 0;
+      }
+    }
+  }
+  &-material {
+    width: 100%;
+    height: 260px;
+  }
+
+  &__photo-wrap {
+
+  }
+
+  &__description-wrap {
+    padding-right: 30px;
+  }
+
+  &-download {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    &__item {
+      font-size: 14px;
+      text-decoration: underline;
+      padding-left: 35px;
+      display: block;
+      height: 28px;
+      line-height: 28px;
+      &:hover {
+        text-decoration: none;
+      }
+      &_presentation {
+        color: #0067ce;
+        background: url("../images/pdf_blue.png") left center no-repeat;
+      }
+      &_catalog-prod {
+        color: #ff301a;
+        background: url("../images/pdf_red.png") left center no-repeat;
+      }
+      &_catalog {
+        color: #a0a0a0;
+        background: url("../images/pdf_grey.png") left center no-repeat;
+      }
+    }
+  }
+
+  &-slider-block {
+    padding-top: 34px;
+    padding-bottom: 50px;
+  }
+
+  &-slider {
+    margin-top: 8px;
+    &__head {
+
+    }
+    &__title {
+      text-transform: uppercase;
+      margin: 0;
+      width: calc(100% - 96px);
+      float: left;
+      padding-left: 31px;
+      font-size: 24px;
+    }
+    &__controls {
+      float: right;
+      padding-right: 30px;
+      &_left {
+        cursor: pointer;
+        border: 2px solid #a6a6a6;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: url("../images/slider-controll-arrow-right.png") center center no-repeat;
+        transform: rotate(180deg);
+
+        &:hover {
+          background: url("../images/slider-controll-arrow-right-hover.png") center center no-repeat;
+          transform: rotate(180deg);
+        }
+
+        &:active {
+          background: url("../images/slider-controll-arrow-right-active.png") center center no-repeat;
+          transform: rotate(180deg);
+          border: 2px solid #777777;
+        }
+      }
+      &_right {
+        cursor: pointer;
+        border: 2px solid #a6a6a6;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: url("../images/slider-controll-arrow-right.png") center center no-repeat;
+
+        &:hover {
+          background: url("../images/slider-controll-arrow-right-hover.png") center center no-repeat;
+        }
+
+        &:active {
+          background: url("../images/slider-controll-arrow-right-active.png") center center no-repeat;
+          border: 2px solid #777777;
+        }
+      }
+    }
+  }
+  &-table {
+    width: 100%;
+    text-align: left;
+    &_calculator {
+      margin-top: 32px;
+      .typed-table__line {
+        height: 49px;
+      }
+      .typed-table__line td {
+        &:first-child {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+    &__head {
+      height: 60px;
+      background: #333b48;
+      color: #ffffff;
+      font-size: 14px;
+      &_calculator {
+        th {
+          &:nth-child(1) {
+            width: 41%;
+          }
+        }
+      }
+
+      th {
+        padding-left: 9px;
+
+      }
+    }
+    &__line {
+      border-bottom: 1px solid #cccccc;
+      height: 48px;
+      color: #151515;
+      font-size: 14px;
+      font-family: "Roboto Condensed", sans-serif;
+      td {
+        padding-left: 9px;
+        a {
+          text-decoration: none;
+          color: #151515;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &-column {
+    &_1 {
+      width: 74%;
+    }
+    &_2 {
+      width: 26%;
+      padding-left: 12px;
+      &-calculator {
+
+      }
+    }
+    &_calculator {
+      padding-right: 0;
+    }
+
+    &__block {
+      border: 4px solid #dadfe3;
+      padding: 30px;
+      margin-bottom: 40px;
+      &_typed {
+        padding-top: 27px;
+        padding-bottom: 20px;
+      }
+      &_calculator {
+        padding-top: 24px;
+        padding-bottom: 18px;
+        margin-bottom: 20px;
+
+        .block__link {
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+  &-content {
+    padding: 24px 29px 30px 34px;
+
+    &_white {
+      background: white;
+    }
+    &__head {
+      text-transform: uppercase;
+      margin: 0;
+    }
+    &__text {
+      margin-top: 10px;
+    }
+  }
+}
+
+.block {
+  &__head {
+    text-transform: uppercase;
+    margin-top: 0;
+
+    &_typed {
+      font-size: 17px;
+    }
+
+    &_calculator {
+      font-size: 14px;
+      margin-bottom: 21px;
+    }
+  }
+  &__link {
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    padding-left: 10px;
+    background: url("../images/list-arrow-blue.png") no-repeat left top 3px;
+
+    &_typed {
+      font-family: "Roboto Condensed", sans-serif;
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .typed-section {
+    &_slider {
+      padding-top: 0;
+    }
+    &_calculator {
+      padding-top: 26px;
+    }
+  }
+  .typed-slider {
+    &__title {
+      font-size: 17px;
+    }
+    &__card {
+      height: auto;
+      min-height: 173px;
+      bottom: 0;
+      width: 100%;
+
+    }
+  }
+  .typed-download {
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
+  .typed-slider-block {
+    padding-top: 15px;
+  }
+  .typed-column {
+    &_2-calculator {
+      display: none;
+    }
+    &_2 {
+      display: none;
+    }
+    &_1 {
+      width: 100%;
+    }
+  }
+  .typed-table {
+    &_calculator {
+      margin-top: 39px;
+    }
+    &__head {
+      th:last-child {
+        display: none;
+      }
+    }
+  }
+  .typed-table__head_calculator th {
+    font-size: 13px;
+  }
+  .typed-table__head_calculator th:nth-child(1) {
+    padding-left: 27px;
+  }
+  .typed-table__line td {
+    &:last-child{
+      display: none;
+    }
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+  }
+}

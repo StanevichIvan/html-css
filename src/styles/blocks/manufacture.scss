@@ -1,0 +1,191 @@
+.manufacture {
+
+  &__head {
+    padding: 24px 0 15px 29px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 33px;
+  }
+  &__title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 21px;
+    padding: 8px 0 0 2px;
+    &_2 {
+      font-size: 17px;
+      padding: 0;
+    }
+    &_3 {
+      font-size: 17px;
+      padding: 0;
+      margin-top: 36px;
+    }
+    &_4 {
+      font-size: 17px;
+      padding-top: 10px;
+    }
+    &_5 {
+      padding-top: 13px;
+      font-size: 17px;
+    }
+  }
+  &__about {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    &_2 {
+      margin-top: 31px;
+      padding-top: 16px;
+    }
+  }
+  &__wood-col {
+    &_1 {
+      width: 33.5%;
+    }
+
+    &_2 {
+      width: 20%;
+    }
+
+    &_3 {
+      width: 33%;
+    }
+  }
+
+  &__columns-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    &_2 {
+      justify-content: flex-start;
+      font-weight: 400;
+      margin-top: 30px;
+    }
+    &_3 {
+      margin-top: 12px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__panel-type {
+
+    &-head {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 440px;
+
+      &_3 {
+        width: 220px;
+      }
+
+      .page-card__list {
+        width: 50%;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__table {
+    margin-top: 30px;
+    &_2 {
+      margin-top: 34px;
+    }
+    &_3 {
+      margin-top: 35px;
+    }
+    &_4 {
+      margin-top: 35px;
+    }
+  }
+
+  &__grey-wrap {
+    background: #f5f7f9;
+    padding: 0 20px;
+    &_func {
+      padding-bottom: 0;
+    }
+    &_wood {
+      padding-bottom: 4px;
+    }
+  }
+
+  &__white-block {
+    background: white;
+    padding: 0 10px;
+  }
+
+  &__fragment {
+    font-weight: 600;
+    padding-top: 21px;
+  }
+
+  &__description-block {
+    padding: 22px 20px 14px;
+    &_2 {
+      padding-top: 0;
+    }
+    &_3 {
+      padding-bottom: 0;
+    }
+  }
+
+  &-fragment {
+    &__head {
+      font-weight: 600;
+      margin: 0;
+      font-size: 21px;
+      padding-top: 3px;
+      text-transform: uppercase;
+      &_1 {
+        padding-top: 13px;
+      }
+      &_2 {
+        padding-top: 0;
+      }
+      &_3 {
+        font-size: 16px;
+      }
+    }
+    &__sub-head {
+      font-size: 15px;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+  }
+  &__functional-col {
+    li {
+      margin-top: 14px;
+      a {
+        font-size: 15px;
+      }
+    }
+    &_1 {
+      width: 20%;
+    }
+    &_2 {
+      width: 20%;
+    }
+    &_3 {
+      width: 33%;
+    }
+    &_4 {
+      width: 32%;
+    }
+    &_5 {
+      width: 33%;
+    }
+    &_6 {
+
+    }
+    &_7 {
+
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.kp-popup{
+  width: 320px;
+  max-width: 100%;
+  padding: 0 20px 20px;
+
+  &__head{
+    text-align: center;
+    margin: 16px 0 34px;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+}

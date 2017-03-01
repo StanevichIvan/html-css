@@ -1,0 +1,43 @@
+.page-typical-wrap {
+  width: 100%;
+  background: #f3f5f6;
+}
+
+.page-typical-card {
+  background: white;
+  padding: 17px 30px 30px 30px;
+  &_project {
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
+  &__wrap {
+    &_project {
+      padding-top: 30px;
+      padding-bottom: 49px;
+    }
+  }
+  &_manufacture {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-typical-card {
+    padding-left: 0;
+    padding-right: 0;
+    &__wrap {
+      &_project {
+        padding-top: 0;
+        padding-bottom: 25px;
+      }
+    }
+    &_manufacture {
+      padding: 0 30px;
+    }
+  }
+  //.page-typical-card__wrap_project{
+  //  padding-top: 0;
+  //}
+}
